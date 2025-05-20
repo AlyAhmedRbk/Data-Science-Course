@@ -22,3 +22,12 @@ drop table employee_data; -- drop keyword used to delete the table
 
 ALTER table employee_data RENAME column pay to Salary; -- Alter -> updates the column name  
 
+ALTER table employee_data DROP column age;
+
+describe employee_data;
+
+ALTER table employee_data ADD column age int default 24;
+
+Alter table employee_data modify column name varchar(100) default ('');
+
+alter table employee_data modify column Salary int AFTER age;
