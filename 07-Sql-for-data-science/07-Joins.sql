@@ -51,3 +51,5 @@ select students.name, marks.subject_name, marks.scores from students inner join 
  -- using cross join
  
  select students.name, marks.subject_name from students cross join marks;
+ 
+ 
