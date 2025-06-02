@@ -52,4 +52,11 @@ select students.name, marks.subject_name, marks.scores from students inner join 
  
  select students.name, marks.subject_name from students cross join marks;
  
+ -- Union in sql
+select student_id from marks
+ union 
+ select id from students;
  
+ select id,name from students
+ union 
+ select student_id, subject_name from marks;
